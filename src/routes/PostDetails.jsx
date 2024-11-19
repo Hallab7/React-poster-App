@@ -33,7 +33,7 @@ function PostDetails() {
 export default PostDetails;
 
 export async function loader({params}) {
-   const response = await fetch('http://localhost:8080/posts/' + params.postId);
+   const response = await fetch('https://a174-102-89-76-231.ngrok-free.app/posts/' + params.postId);
    const resData = await response.json();
    return resData.post;
 }
